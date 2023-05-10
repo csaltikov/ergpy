@@ -7,3 +7,4 @@ You can enter your FTP and select how long you want the work out to be. The grap
 
 Once you are statisified by the the workout, you can download the workout as an erg file and upload it to your trainer software. 
 In my case, I use TrainerRoad Workout Creator.
+![plot](ergpy_interface.jpg)
