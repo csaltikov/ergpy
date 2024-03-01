@@ -218,12 +218,12 @@ def generate_csv(n_nlicks, meta_data, workout_time):
     profile_dict = meta_data_json["profile"]
     profile_df = pd.DataFrame(profile_dict)
     make_erg(profile_df, workout_time)
-    if n_nlicks == 0:
-        raise PreventUpdate
-    else:
+    if ctx.triggered_id == "btn":
         return dcc.send_file(path=f"static/{ergfile_name}",
                              filename=ergfile_name,
                              type='text/csv')
+    else:
+        raise PreventUpdate
 
 
 if __name__ == '__main__':
